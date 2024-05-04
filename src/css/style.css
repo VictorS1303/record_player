@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+
+:root
+{
+    --record-player-background-color: #231f20;
+    --turntable-background-color: #000;
+    --border-color: #b72126;
+    --control-buttons-color: #b72126;
+    
+    /* Radii */
+    --base-border-radiu: 10px;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+button
+{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
