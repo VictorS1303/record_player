@@ -11,6 +11,16 @@
     --base-border-radiu: 10px;
 }
 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
 body
 {
     font-family: 'Roboto', sans-serif;
@@ -31,4 +41,12 @@ li
 a
 {
     text-decoration: none;
+}
+
+img, video
+{
+    display: block;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
 }
