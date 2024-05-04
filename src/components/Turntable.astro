@@ -1,0 +1,26 @@
+<div class="turntable" id="turntable"></div>
+
+
+<style>
+    .turntable
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+        background-color: var(--turntable-background-color);
+        border-radius: calc(var(--base-border-radius) * 100);
+        border: 2px solid var(--border-color);
+    }
+
+    @media screen and (min-width: 768px)
+    {
+        .turntable
+        {
+            height: 300px;
+            width: 300px;
+        }
+    }
+</style>
