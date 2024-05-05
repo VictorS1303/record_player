@@ -1,0 +1,21 @@
+---
+const covers = ['public/images/covers/letavaer_liiglad.webp', 'public/images/covers/solskin_bag_sky.webp', 'public/images/covers/stadig_dum.webp', 'public/images/covers/sommer_ep.webp']
+---
+
+<div class="cover" id="cover">
+    {covers.map((cover, index) => (
+        <img src={cover} alt={`${index}`} />
+    ))}
+</div>
+
+<style>
+    .cover
+    {
+        height: 100%;
+    }
+</style>
+
+
+<script>
+
+</script>
