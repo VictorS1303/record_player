@@ -1,0 +1,61 @@
+<div class="container control-buttons-container">
+    <button>
+        <i class="fas fa-play play-pause-btn" id="play_pause_btn"></i>
+    </button>
+    <button>
+        <i class="fas fa-stop stop-btn" id="stop_btn"></i>
+    </button>
+</div>
+
+<style>
+    .container.control-buttons-container
+    {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container.control-buttons-container i
+    {
+        color: var(--control-buttons-color);
+        font-size: 23px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container.control-buttons-container
+        {
+            left: 90%;
+        }
+    }
+</style>
+
+
+<script>
+    const playPauseBtn = document.querySelector('#play_pause_btn')
+
+    playPauseBtn.addEventListener('click', playAudio)
+
+
+    function playAudio()
+    {
+        updatePlayButtonState()
+    }
+
+    function updatePlayButtonState()
+    {
+        if(playPauseBtn.classList.contains('fa-play'))
+        {
+            playPauseBtn.classList.remove('fa-play')
+            playPauseBtn.classList.add('fa-pause')
+        }
+        else
+        {
+
+            playPauseBtn.classList.remove('fa-pause')
+            playPauseBtn.classList.add('fa-play')
+        }
+    }
+</script>
