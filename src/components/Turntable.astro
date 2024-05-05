@@ -1,4 +1,6 @@
-<div class="turntable" id="turntable"></div>
+<div class="turntable" id="turntable">
+    <img src="logos/logo.webp" alt="turntable_logo">
+</div>
 
 
 <style>
@@ -13,6 +15,12 @@
         background-color: var(--turntable-background-color);
         border-radius: calc(var(--base-border-radius) * 100);
         border: 2px solid var(--border-color);
+    }
+
+    .turntable img
+    {
+        opacity: .3;
+        z-index: -3;
     }
 
     @media screen and (min-width: 768px)
